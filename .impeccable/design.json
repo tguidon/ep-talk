@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-21T21:52:38.366262+00:00",
+  "title": "Design System: EP Talk",
+  "extensions": {
+    "colorMeta": {
+      "chassis": {
+        "role": "neutral",
+        "displayName": "Chassis Slate",
+        "tonalRamp": [
+          "oklch(15% 0.0146 248.5)",
+          "oklch(26% 0.0146 248.5)",
+          "oklch(38% 0.0146 248.5)",
+          "oklch(49% 0.0146 248.5)",
+          "oklch(61% 0.0146 248.5)",
+          "oklch(72% 0.0146 248.5)",
+          "oklch(84% 0.0146 248.5)",
+          "oklch(95% 0.0146 248.5)"
+        ]
+      },
+      "screen": {
+        "role": "neutral",
+        "displayName": "Telemetry Black",
+        "tonalRamp": [
+          "oklch(15% 0.0114 242.5)",
+          "oklch(26% 0.0114 242.5)",
+          "oklch(38% 0.0114 242.5)",
+          "oklch(49% 0.0114 242.5)",
+          "oklch(61% 0.0114 242.5)",
+          "oklch(72% 0.0114 242.5)",
+          "oklch(84% 0.0114 242.5)",
+          "oklch(95% 0.0114 242.5)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Slate Rule",
+        "tonalRamp": [
+          "oklch(15% 0.0185 245.2)",
+          "oklch(26% 0.0185 245.2)",
+          "oklch(38% 0.0185 245.2)",
+          "oklch(49% 0.0185 245.2)",
+          "oklch(61% 0.0185 245.2)",
+          "oklch(72% 0.0185 245.2)",
+          "oklch(84% 0.0185 245.2)",
+          "oklch(95% 0.0185 245.2)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Pale Text",
+        "tonalRamp": [
+          "oklch(15% 0.0035 219.5)",
+          "oklch(26% 0.0035 219.5)",
+          "oklch(38% 0.0035 219.5)",
+          "oklch(49% 0.0035 219.5)",
+          "oklch(61% 0.0035 219.5)",
+          "oklch(72% 0.0035 219.5)",
+          "oklch(84% 0.0035 219.5)",
+          "oklch(95% 0.0035 219.5)"
+        ]
+      },
+      "secondary": {
+        "role": "neutral",
+        "displayName": "Cool Secondary Text",
+        "tonalRamp": [
+          "oklch(15% 0.0251 244.2)",
+          "oklch(26% 0.0251 244.2)",
+          "oklch(38% 0.0251 244.2)",
+          "oklch(49% 0.0251 244.2)",
+          "oklch(61% 0.0251 244.2)",
+          "oklch(72% 0.0251 244.2)",
+          "oklch(84% 0.0251 244.2)",
+          "oklch(95% 0.0251 244.2)"
+        ]
+      },
+      "ready": {
+        "role": "primary",
+        "displayName": "Link Mint",
+        "tonalRamp": [
+          "oklch(15% 0.0723 166.4)",
+          "oklch(26% 0.0723 166.4)",
+          "oklch(38% 0.0723 166.4)",
+          "oklch(49% 0.0723 166.4)",
+          "oklch(61% 0.0723 166.4)",
+          "oklch(72% 0.0723 166.4)",
+          "oklch(84% 0.0723 166.4)",
+          "oklch(95% 0.0723 166.4)"
+        ]
+      },
+      "signal": {
+        "role": "secondary",
+        "displayName": "Signal Amber",
+        "tonalRamp": [
+          "oklch(15% 0.1212 65.2)",
+          "oklch(26% 0.1212 65.2)",
+          "oklch(38% 0.1212 65.2)",
+          "oklch(49% 0.1212 65.2)",
+          "oklch(61% 0.1212 65.2)",
+          "oklch(72% 0.1212 65.2)",
+          "oklch(84% 0.1212 65.2)",
+          "oklch(95% 0.1212 65.2)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Window title",
+        "purpose": "Main app name."
+      },
+      "headline": {
+        "displayName": "Readout headline",
+        "purpose": "Current operational state."
+      },
+      "reading": {
+        "displayName": "Level readout",
+        "purpose": "Numeric dBFS measurement."
+      }
+    }
+  },
+  "components": [
+    {
+      "name": "Arm",
+      "kind": "button",
+      "refersTo": "arm",
+      "description": "Arm the mic link.",
+      "html": "<button class=\"ds-arm\"><svg viewBox=\"0 0 24 24\" width=\"13\" height=\"13\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M12 2v10M6 6a8 8 0 1 0 12 0\"/></svg>Arm</button>",
+      "css": ".ds-arm{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-width:83px;min-height:24px;padding:3px 11px;border:1px solid transparent;border-radius:6px;background:#9CD9BF;color:#0D1216;font:600 13px -apple-system,sans-serif}.ds-arm:hover{filter:brightness(1.09)}.ds-arm:active{filter:brightness(.9)}.ds-arm:focus-visible{outline:2px solid #9CD9BF;outline-offset:2px}"
+    },
+    {
+      "name": "Disarm",
+      "kind": "button",
+      "refersTo": "disarm",
+      "description": "Disarm the mic link.",
+      "html": "<button class=\"ds-disarm\"><svg viewBox=\"0 0 24 24\" width=\"13\" height=\"13\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M12 2v10M6 6a8 8 0 1 0 12 0\"/></svg>Disarm</button>",
+      "css": ".ds-disarm{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-width:83px;min-height:24px;padding:3px 11px;border:1px solid transparent;border-radius:6px;background:#323B43;color:#EFF2F3;font:600 13px -apple-system,sans-serif}.ds-disarm:hover{filter:brightness(1.09)}.ds-disarm:active{filter:brightness(.9)}.ds-disarm:focus-visible{outline:2px solid #9CD9BF;outline-offset:2px}"
+    },
+    {
+      "name": "Telemetry",
+      "kind": "card",
+      "refersTo": "telemetry",
+      "description": "Status, guidance and measured input in an inset panel.",
+      "html": "<section class=\"ds-telemetry\"><div class=\"ds-telemetry-status\">Ready</div><p>Hold the paddle to dictate. Release it to finish.</p><div class=\"ds-telemetry-meta\"><span>INPUT LEVEL</span><code>−20 dBFS</code></div><div class=\"ds-telemetry-meter\" aria-label=\"Audio input level, minus 20 decibels\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></section>",
+      "css": ".ds-telemetry{background:#0D1216;color:#EFF2F3;border:1px solid #323B43;border-radius:13px;padding:18px;font:12px -apple-system,sans-serif}.ds-telemetry-status{font-size:28px;font-weight:500;letter-spacing:-.45px;display:flex;align-items:center;gap:11px}.ds-telemetry-status:before{content:\"\";display:inline-block;width:9px;height:9px;border-radius:50%;background:#9CD9BF}.ds-telemetry p{color:#A3B2BF;margin:8px 0 13px;min-height:32px}.ds-telemetry-meta{display:flex;justify-content:space-between;align-items:center;color:#A3B2BF;border-top:1px solid #323B43;padding:13px 0 9px;font-size:10px;font-weight:600;letter-spacing:1.05px}.ds-telemetry-meta code{font:500 11px SFMono-Regular,monospace;letter-spacing:normal}.ds-telemetry-meter{display:grid;grid-template-columns:repeat(32,1fr);gap:3px}.ds-telemetry-meter span{height:9px;border-radius:1.3px;background:#323B43}.ds-telemetry-meter span:nth-child(-n+22){background:#9CD9BF}"
+    },
+    {
+      "name": "Audio Input",
+      "kind": "input",
+      "refersTo": "audio-input",
+      "description": "The native audio device menu shows the current input.",
+      "html": "<label class=\"ds-input-row\"><span>Audio input</span><select aria-label=\"Audio input\"><option>USB Advanced Audio Device</option><option>Choose input</option></select></label>",
+      "css": ".ds-input-row{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:43px;color:#EFF2F3;border-bottom:1px solid #323B43;font:500 13px -apple-system,sans-serif;color-scheme:dark}.ds-input-row select{max-width:252px;font:inherit;color:inherit;background:#181E24;border:1px solid transparent;border-radius:4px}.ds-input-row select:hover{border-color:#323B43}.ds-input-row select:focus-visible{outline:2px solid #9CD9BF}"
+    },
+    {
+      "name": "Shortcut Recorder Control",
+      "kind": "button",
+      "refersTo": "shortcut-recorder",
+      "description": "Displays the current binding and opens its recording sheet.",
+      "html": "<div class=\"ds-shortcut-row\"><div><span>Dictation shortcut</span><small>Match the hold-to-talk shortcut in your dictation app.</small></div><button aria-label=\"Record dictation shortcut\">⌃ ⌥ D</button></div>",
+      "css": ".ds-shortcut-row{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:58px;color:#EFF2F3;border-bottom:1px solid #323B43;font:500 13px -apple-system,sans-serif}.ds-shortcut-row small{display:block;margin-top:4px;color:#A3B2BF;font:400 11px -apple-system,sans-serif}.ds-shortcut-row button{background:#323B43;color:#EFF2F3;border:1px solid transparent;border-radius:5px;padding:3px 8px;font:500 13px SFMono-Regular,monospace;white-space:nowrap}.ds-shortcut-row button:hover{filter:brightness(1.15)}.ds-shortcut-row button:focus-visible{outline:2px solid #9CD9BF}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Radio console",
+    "overview": "The interface takes its cues from compact NASA communications controls. A dark chassis holds an inset readout for link state and level. A few native controls put setup and changes within reach of the readout.",
+    "keyCharacteristics": [
+      "A status headline and a short line of guidance share the telemetry panel.",
+      "Mint and amber convey operational states.",
+      "Native menus, buttons and sheets handle configuration."
+    ],
+    "rules": [
+      {
+        "name": "The Signal Color Rule",
+        "body": "Use mint and amber for a live state or an action tied to that state. Pair state color with a readable status.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do keep the state name beside the lamp.",
+      "Do use native controls for keyboard and focus behavior."
+    ],
+    "donts": [
+      "Don’t use the meter as a substitute for connection or transmission status."
+    ]
+  }
+}
