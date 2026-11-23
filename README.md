@@ -1,4 +1,6 @@
-<img src="docs/app-icon.png" alt="EP Talk app icon" width="112">
+<p align="center">
+  <img src="docs/app-icon.png" alt="EP Talk app icon" width="240">
+</p>
 
 # EP Talk
 
